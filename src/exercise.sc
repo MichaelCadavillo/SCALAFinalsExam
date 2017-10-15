@@ -15,14 +15,10 @@ object exercise {
 	
 	parentNode.addNode(new Node(null, null, 1));
 	parentNode.addNode(new Node(null, null, 5));
-	parentNode.addNode(new Node(null, null, 5));
 	parentNode.addNode(new Node(null, null, 7));
 	parentNode.addNode(new Node(null, null, 10));
 	parentNode.addNode(new Node(null, null, 11));
-	parentNode.addNode(new Node(null, null, 11));
-	parentNode.addNode(new Node(null, null, 11));
 	parentNode.addNode(new Node(null, null, 15));
-	parentNode.addNode(new Node(null, null, 20));
 	parentNode.addNode(new Node(null, null, 20));
 	parentNode.addNode(new Node(null, null, 1));
 	parentNode.setNode(parentNode)
@@ -30,39 +26,27 @@ object exercise {
 	parentNode.inOrder(parentNode);           //> 1
                                                   //| 1
                                                   //| 5
-                                                  //| 5
                                                   //| 7
                                                   //| 8
                                                   //| 10
                                                   //| 11
-                                                  //| 11
-                                                  //| 11
                                                   //| 15
-                                                  //| 20
                                                   //| 20
 //preOrder
 	parentNode.preOrder(parentNode);          //> 8
                                                   //| 1
                                                   //| 1
                                                   //| 5
-                                                  //| 5
                                                   //| 7
                                                   //| 10
                                                   //| 11
-                                                  //| 11
-                                                  //| 11
                                                   //| 15
-                                                  //| 20
                                                   //| 20
 //postOrder
 	parentNode.postOrder(parentNode);         //> 1
-                                                  //| 5
                                                   //| 7
                                                   //| 5
                                                   //| 1
-                                                  //| 11
-                                                  //| 11
-                                                  //| 20
                                                   //| 20
                                                   //| 15
                                                   //| 11
@@ -107,6 +91,7 @@ object exercise {
                                                   //| 5
                                                   //| 5
                                                   //| 6
+                                                  
 //duplicates
 stack.removeDuplicates(stack)                     //> 6
                                                   //| 5
